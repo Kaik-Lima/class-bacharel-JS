@@ -23,39 +23,39 @@
 
   <!-- DIV que armazenará todos os botões -->
   <div id="botoes">
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
+    <!-- Botão 01 - -->
+    <input type="button" value="Atualizar" onclick="window.location.reload()" />
+    <!--Fim Botão 01-->
+    <!-- Botão 02 - -->
+    <input type="button" value="Tamanho Fonte" onclick="mudaTamanhoFonte()" />
+    <!--Fim Botão 02-->
+    <!-- Botão 03 - -->
+    <input type="button" value="Muda Cor Fonte" onclick="mudaCorFonte()"/>
+    <!--Fim Botão 03 -->
+    <!-- Botão 04 - -->
+    <input type="button" value="Muda Background" onclick="backDiv()"/>
+    <!--Fim Botão 04-->
+    <!-- Botão 05 - -->
+    <input type="button" value="Itálico" onclick="italico()"/>
+    <!--Fim Botão 05-->
+    <!-- Botão 06 - -->
+    <input type="button" value="Negrito" onclick="negrito()"/>
+    <!--Fim Botão 06-->
+    <!-- Botão 07 - -->
+    <input type="button" value="Incluir Borda" onclick="border()" />
+    <!--Fim Botão 07-->
+    <!-- Botão 08 - -->
+    <input type="button" value="Tira Borda" onclick="excluirBorder()"/>
+    <!--Fim Botão 08-->
+    <!-- Botão 09 - -->
+    <input type="button" value="Esconder a div" onclick="esconderDiv()"/>
+    <!--Fim Botão 09-->
+    <!-- Botão 10 - -->
+    <input type="button" value="Reaparece a div" onclick="reapareceDiv()"/>
+    <!--Fim Botão 10-->
+    <!-- Botão 11 - -->
+    <input type="button" value="Não" onclick="nao()"/>
+    <!--Fim Botão 11-->
     <!-- Botão X - -->
     <input type="button" value="X" />
     <!--Fim Botão X-->
@@ -85,54 +85,54 @@
   <img id="image" src="xuxa.jpg">
 
   <script> // Começa a brincadeira com JS
-    // Botão X - xx
-    function x() {
-
+    // Botão 2 - Tamanho Fonte
+    function mudaTamanhoFonte() {
+      document.getElementById("manipula").style.fontSize = '20pt';
     }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
+    //fim do Botão 2
+    // Botão 3 - Muda Cor Fonte
+    function mudaCorFonte() {
+      document.getElementById('manipula').style.color = 'red'
 }
-//fim do Botão X
-    // Botão X - xx
-    function x() {
-
+//fim do Botão 3
+    // Botão 4 - Muda Background Div
+    function backDiv() {
+      document.getElementById('manipula').style.backgroundColor = 'black'
 }
-//fim do Botão X
-    // Botão X - xx
-    function x() {
-
+//fim do Botão 4
+    // Botão 5 - Italico
+    function italico() {
+      document.getElementById('manipula').style.fontStyle = 'italic'
 }
-//fim do Botão X
-    // Botão X - xx
-    function x() {
-
+//fim do Botão 5
+    // Botão 6 - Negrito
+    function negrito() {
+      document.getElementById('manipula').style.fontWeight = 'bold'
+    }
+    //fim do Botão 7
+    // Botão 7 - Inclui border
+    function border() {
+      document.getElementById('manipula').style.border = '2px solid black'
+    }
+    //fim do Botão 7
+    // Botão 8 - Excluir Borda
+    function excluirBorder() {
+      document.getElementById('manipula').style.border = '0px'
+    }
+    //fim do Botão 8
+    // Botão 9 - Esconde a div
+    function esconderDiv() {
+      document.getElementById('manipula').style.display = 'none'
     }
     //fim do Botão X
-    // Botão X - xx
-    function x() {
-
+    // Botão 10 - Reaparece a div
+    function reapareceDiv() {
+      document.getElementById('manipula').style.display = 'block'
     }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
-    }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
-    }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
-    }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
+    //fim do Botão 10
+    // Botão Não - 11
+    function nao() {
+      document.getElementsByClassName('chamada')[0].innerHTML = 'Neste Botão Não'
     }
     //fim do Botão X
     // Botão X - xx
